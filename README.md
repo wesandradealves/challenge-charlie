@@ -2,7 +2,10 @@
 
 > Default boilerplate
 
+* A Api openweather não permite mais 3 dias se for chave free, fui obrigado a fazer um workaround. (E exibir setas para mostrar o tempo durante o dia.)
+
 ## Build Setup
+
 
 ``` bash
 # install dependencies
