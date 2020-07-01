@@ -19,7 +19,7 @@ const router = new Router({
       component: PageNotFound,
       meta: {
         slug: "page-not-found",
-        title: "Violab | 404"
+        title: "Weather | 404"
       }
     },
     {
@@ -28,7 +28,7 @@ const router = new Router({
       component: Home,
       meta: {
         slug: "home",
-        title: "Violab"
+        title: "Weather"
       },
       props: true
     }
