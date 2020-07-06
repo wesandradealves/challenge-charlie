@@ -11,8 +11,8 @@
 	    	</i>
 			<input placeholder="Busca..." type="text" v-model="s" @input="getData">
 	    </div>
-		<p v-show="$store.state.err">Ocorreram erros na sua busca.</p>
-		<div v-show="!$store.state.err" class="days-wrapper">
+		<p v-if="$store.state.err">Ocorreram erros na sua busca.</p>
+		<div v-else="!$store.state.err" class="days-wrapper">
 			<div class="day" v-for="(day, index) in $store.state.calendar" :class="index === 0 ? 'toggle' : ''">
 				<div class="inner">
 					<weather-list :items="day.weather" :day="index" :date="day.date" />
